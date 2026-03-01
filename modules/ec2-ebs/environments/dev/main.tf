@@ -1,16 +1,3 @@
-terraform {
-  backend "s3" {
-    bucket         = "company-dev-terraform-state"
-    key            = "ec2/dev.tfstate"
-    region         = "ap-south-1"
-    dynamodb_table = "terraform-lock"
-  }
-}
-
-provider "aws" {
-  region = var.region
-}
-
 module "ec2" {
   source = "../../modules/ec2"
 
