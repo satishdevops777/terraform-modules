@@ -1,0 +1,7 @@
+region          = "ap-south-1"
+name            = "dev-ec2"
+ami_id          = "ami-xxxxxxxx"
+instance_type   = "t3.micro"
+subnet_id       = "subnet-xxxx"
+vpc_id          = "vpc-xxxx"
+key_name        = "my-key"
